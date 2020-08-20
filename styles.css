@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+span{
+    color: #00909e;
+    font-weight: 500;
+}
+
+header{
+    height: 30vh;
+    width: auto;
+    background-color: #4BC0C0;
+    /* position: absolute; */
+}
+
+#heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#description{
+    /* background-color:#f7f7f7; */
+    height: auto;
+    width: auto;
+    margin-bottom: 3%;
+}
+
+#description h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #00909e;
+    margin-top: 2%;
+}
+
+p{
+    color: grey ;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+#text{
+    padding: 2% 15%;
+}
+
