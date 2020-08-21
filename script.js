@@ -78,6 +78,10 @@ function printTable(countArr){
 
 function generateChart(wcArr){
     var ctx = document.getElementById('myChart').getContext('2d');
+    let zipsLaw = []
+    for (let i = 0; i < wcArr.length; i++) {
+        zipsLaw[i] = (1 / (i + 1)) * wcArr[0].count
+    }
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -102,7 +106,23 @@ function generateChart(wcArr){
                     'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 2
-            }]
+            },
+            {
+                label: 'Zipfs Law',
+                data: zipsLaw ,
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: 'blue',
+                borderWidth: 2
+            }
+        
+        ]
         },
         options: {
             scales: {
