@@ -67,6 +67,7 @@ function sortObject(obj) {
 };
 
 function printTable(countArr){
+    $("#table tbody").empty() ;
     countArr.splice(120) ;
     countArr.forEach((obj)=>{
         let c = obj.count ;
