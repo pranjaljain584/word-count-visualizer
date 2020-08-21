@@ -18,7 +18,7 @@
     <body>
 
         <header>
-            <h1 id="heading">Word Count Visualizer</h1>
+            <h1 class="heading">Word Count Visualizer</h1>
         </header>
 
         <div id="description">
@@ -46,11 +46,40 @@
             </div>
         </div>
 
-        <div id="">
+        <div id="main">
+
+            <h1 class="heading" style="font-size: 2.5rem;">Let's Get Started...</h1>
+
+            <div id="inputDiv">
+                <div class="form-group">
+                    <label for="inputText">Enter Your Text Here...</label>
+                    <textarea id="inputText" rows="10" cols="150" placeholder="type something.."></textarea>
+                </div>
+                <button class="btn btn-lg " id="calcBtn">Calculate</button>
+            </div>
+
+            <h3 class="heading" style="font-size: 1.5rem;">Your results are here...</h3>
+
+
+            <div id="result">
+                <table id="table">
+                    <thead>
+                      <tr>
+                        <th>Word</th>
+                        <th>Count</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <canvas id="myChart" width="300" height="300"></canvas>
+
+            </div>
 
         </div>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script.js"></script>
         <!-- Optional JavaScript -->
